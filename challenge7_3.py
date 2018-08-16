@@ -77,8 +77,8 @@ def climate_plot():
     # 子图 3（面积图 kind = 'area'）：绘制有气象数据的年份，「各季度地面平均温度」与「各季度地面-海洋平均温度」面积图。
     #plt.subplot(223)
     ax3 = df_temp.plot(kind='area', ax=axes[1, 0], figsize=(16, 9))
-    ax3.set_xlabel('Years')
-    ax3.set_ylabel('Values')
+    ax3.set_xlabel('Quarters')
+    ax3.set_ylabel('Temperature')
     #ax3.legend(loc='best')
     ax3.autoscale(axis='x', tight=True)
     ax3.grid(True)
